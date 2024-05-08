@@ -1,0 +1,14 @@
+$themeColor: #28BEA0;
+
+// button
+.el-button {
+  padding: 11px;
+}
+.shanBei-btn, .shanBei-btn:hover {
+  background-color: $themeColor;
+  color: #fff;
+}
+.shanBei-download-btn, .shanBei-download-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
