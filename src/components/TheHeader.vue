@@ -27,7 +27,7 @@ defineProps({
 	.chef {
 		width: 100%;
 		height: 64px;
-
+		background-color: #fff;
 		.chef-main {
 			width: 940px;
 			margin: 0 auto;

@@ -1,7 +1,7 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 import theHeader from './components/TheHeader.vue'
 import theBanner from './components/TheBanner.vue'
+import wordsBanner from './views/WordsBanner.vue'
 import { ref } from 'vue'
 const bannerData = ref([
   {
@@ -33,6 +33,7 @@ const bannerData = ref([
       </div>
       <div id="main">
         <theBanner :bannerData="bannerData" />
+        <wordsBanner />
       </div>
       <div id="footer">footer</div>
     </div>
