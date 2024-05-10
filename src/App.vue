@@ -2,6 +2,11 @@
 import theHeader from './components/TheHeader.vue'
 import theBanner from './components/TheBanner.vue'
 import wordsBanner from './views/WordsBanner.vue'
+import readBanner from './views/ReadBanner.vue'
+import listenBanner from './views/listenBanner.vue'
+import programBanner from './views/ProgramBanner.vue'
+import classBanner from './views/classBanner.vue'
+import examBanner from './views/ExamBanner.vue'
 import { ref } from 'vue'
 const bannerData = ref([
   {
@@ -32,8 +37,13 @@ const bannerData = ref([
         <theHeader />
       </div>
       <div id="main">
-        <theBanner :bannerData="bannerData" />
-        <wordsBanner />
+        <the-banner id="words" :bannerData="bannerData" />
+        <words-banner />
+        <read-banner id="read" />
+        <listen-banner id="listen" />
+        <program-banner id="program" />
+        <class-banner />
+        <exam-banner />
       </div>
       <div id="footer">footer</div>
     </div>

@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  btnTitle: {
+  width: {
     type: String
   },
   isTextRight: {
@@ -11,10 +11,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="desc-wrap" :class="{'text-right': isTextRight}">
+  <div class="desc-wrap" :style="{'width': width}" :class="{'text-right': isTextRight}">
     <slot name="desc-title-block"></slot>
     <slot name="desc-detail-block"></slot>
     <slot name="desc-btn"></slot>
+    <slot name="desc-extra-block"></slot>
   </div>
 </template>
 
@@ -24,7 +25,6 @@ defineProps({
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  margin-bottom: 100px;
 }
 .text-right {
   align-items: flex-end;

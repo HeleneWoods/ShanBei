@@ -12,7 +12,7 @@ import mainItemBannerDesc from '@/components/MainItemBannerDesc.vue'
       </div>
     </template>
     <template #right>
-      <mainItemBannerDesc :isTextRight="true">
+      <mainItemBannerDesc class="desc-wrap" :isTextRight="true">
         <template #desc-title-block>
           <div class="words-app-logo">
             <img width="32" src="https://media-image1.baydn.com/storage_media_image/bmpdqn/e03c60afe9723757ad81c10edeb3caa9.e14c2536f243eb8236b474b152e97d09.png">
@@ -29,8 +29,6 @@ import mainItemBannerDesc from '@/components/MainItemBannerDesc.vue'
           <el-button class="desc-btn shanBei-download-btn">立即下载</el-button>
         </template>
       </mainItemBannerDesc>
-      <!-- <div class="desc-wrap">
-      </div> -->
     </template>
   </mainItemBanner>
 </div>
@@ -46,6 +44,8 @@ import mainItemBannerDesc from '@/components/MainItemBannerDesc.vue'
   width: 620px;
 }
 .words-app-logo {
+  display: flex;
+  align-items: center;
   color: $themeColor;
 
   span:first-of-type {
