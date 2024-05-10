@@ -7,7 +7,7 @@ defineProps({
   },
   leftStart: {
     type: Boolean,
-    required: true
+    default: true
   }
 })
 
